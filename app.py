@@ -18,8 +18,8 @@ from collections import defaultdict
 
 app = Flask(__name__)
 
-line_bot_api = LineBotApi('d007709718f8a8af2042ae3ebc48aca5')
-handler = WebhookHandler('hFcHkq7njlfHTSIAyNbkgTp3FQdbV7ntUr3DNMucqCgM4UYWB4RHblMw1oO7QZNaS8Pb+mbn+PdC01dx5JperIBvSjl58oNCWWLVEgDjhIYEq9lObjhAVfrtX6+6zrBBcfGXxpKthYd4ke17od+iiswh8p6xlupEHSzmJbGEAiwlZrQn+cnjYYg8swHSC/3b')
+line_bot_api = LineBotApi('YOUR_CHANNEL_ACCESS_TOKEN')
+handler = WebhookHandler('LINE_CHANNEL_SECRET')
 
 @app.route("/callback", methods=['POST'])
 def callback():
